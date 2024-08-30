@@ -1,0 +1,8 @@
+ssh_key
+ssh_key.pub
+ssh_pulic_key
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+m6.tfplan
