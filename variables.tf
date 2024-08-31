@@ -25,6 +25,12 @@ variable "vpc_public_subnets_cidr_block" {
   default     = ["10.0.0.0/24", "10.0.1.0/24"]
 }
 
+variable "vpc_public_subnet_count" {
+  type = number
+  description = "Number of vpc public subnets"
+  default = 2
+}
+
 variable "map_public_ip_on_launch" {
   type        = bool
   description = "Map a public IP address for subnet instances"
@@ -37,6 +43,11 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+variable "instance_count" {
+  type        = number
+  description = "Number of EC2 Instances"
+  default     = 2
+}
 
 variable "company" {
   type        = string
