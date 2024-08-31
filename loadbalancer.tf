@@ -1,3 +1,7 @@
+# aws_elb_service_account
+
+data "aws_elb_service_account" "root" {}
+
 resource "aws_lb" "nginx" {
   name               = "globo-web-app"
   internal           = false
